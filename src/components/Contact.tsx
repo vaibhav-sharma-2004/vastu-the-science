@@ -70,7 +70,7 @@ export default function Contact() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-4xl md:text-5xl font-serif text-slate-900 mb-6"
+                        className="text-4xl md:text-5xl font-serif text-slate-900"
                     >
                         Get in Touch
                     </motion.h2>
@@ -98,7 +98,7 @@ export default function Contact() {
                                             initial={{ opacity: 0, scale: 0.9 }}
                                             animate={{ opacity: 1, scale: 1 }}
                                             exit={{ opacity: 0, scale: 0.9 }}
-                                            className="bg-green-50 border border-green-200 p-6 rounded-2xl flex flex-col items-center text-center space-y-3"
+                                            className="bg-green-50 p-6 rounded-2xl flex flex-col items-center text-center space-y-3"
                                         >
                                             <CheckCircle className="w-12 h-12 text-green-500" />
                                             <h3 className="text-lg font-bold text-green-900 font-sans">Message Sent!</h3>
@@ -115,7 +115,7 @@ export default function Contact() {
                                                     value={formData.name}
                                                     onChange={handleChange}
                                                     disabled={status === 'loading'}
-                                                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all bg-white disabled:opacity-50"
+                                                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all bg-white disabled:opacity-50 text-slate-900 placeholder:text-slate-400"
                                                     placeholder="Your Name"
                                                 />
                                             </div>
@@ -128,7 +128,7 @@ export default function Contact() {
                                                     value={formData.email}
                                                     onChange={handleChange}
                                                     disabled={status === 'loading'}
-                                                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all bg-white disabled:opacity-50"
+                                                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all bg-white disabled:opacity-50 text-slate-900 placeholder:text-slate-400"
                                                     placeholder="your@email.com"
                                                 />
                                             </div>
@@ -141,7 +141,7 @@ export default function Contact() {
                                                     value={formData.message}
                                                     onChange={handleChange}
                                                     disabled={status === 'loading'}
-                                                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all bg-white resize-none disabled:opacity-50"
+                                                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all bg-white resize-none disabled:opacity-50 text-slate-900 placeholder:text-slate-400"
                                                     placeholder="How can we help you?"
                                                 ></textarea>
                                             </div>
@@ -213,8 +213,8 @@ export default function Contact() {
                                     </a>
 
                                     <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsCcMfLKgCdSjmVrbXJfnxRRvNkmwFgwqfzBFzVZTJPhdfWrKRkBlJjrzThbXMKMpvlvBctv" className="flex items-center gap-4 p-4 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-amber-200 transition-all group" target="_blank">
-                                        <div className="w-12 h-12 rounded-full bg-slate-900/10 flex items-center justify-center text-slate-900 transition-all">
-                                            <Mail className=" text-amber-600" />
+                                        <div className="w-12 h-12 rounded-full bg-slate-900/10 flex items-center justify-center text-slate-900 transition-all group-hover:bg-slate-900 group-hover:text-white">
+                                            <Mail className="w-5 h-5 text-amber-600" />
                                         </div>
                                         <div>
                                             <div className="text-sm font-sans font-bold text-slate-900">Email</div>

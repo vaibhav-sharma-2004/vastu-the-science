@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
     return (
-        <section className="relative min-h-screen  flex flex-col items-center justify-center ">
+        <section className="relative min-h-screen flex flex-col items-center justify-center ">
             {/* Background Layer */}
             <PlanetBackground />
 
@@ -19,7 +19,7 @@ export default function Hero() {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                     <h2 className="text-slate-600 uppercase tracking-[0.2em] text-sm md:text-base mb-4 font-sans font-medium">
-                        Vastu : The vedic science
+                        Vastu : The science
                     </h2>
                 </motion.div>
 
@@ -48,13 +48,13 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
                 >
-                    <button className="group relative inline-flex items-center gap-3 px-8 py-4 bg-slate-900 text-amber-50 font-medium rounded-full overflow-hidden transition-all hover:bg-slate-800 hover:scale-105 active:scale-95 shadow-lg shadow-slate-900/10">
+                    <a href="#Contact" className="group relative inline-flex items-center gap-3 px-8 py-4 bg-slate-900 text-amber-50 font-medium rounded-full overflow-hidden transition-all hover:bg-slate-800 hover:scale-105 active:scale-95 shadow-lg shadow-slate-900/10">
                         <span className="relative z-10">Book a Consultation</span>
                         <ArrowRight className="w-5 h-5 relative z-10 transition-transform group-hover:translate-x-1" />
 
                         {/* Hover Glow */}
                         <div className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-                    </button>
+                    </a>
                 </motion.div>
             </div>
 

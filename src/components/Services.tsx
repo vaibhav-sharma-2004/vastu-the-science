@@ -30,8 +30,8 @@ export default function Services() {
                                 key={category}
                                 onClick={() => setActiveCategory(category)}
                                 className={`relative py-3 px-6 rounded-xl text-sm font-sans font-semibold transition-all duration-300 ${activeCategory === category
-                                        ? "text-white"
-                                        : "text-slate-500 hover:text-slate-700"
+                                    ? "text-white"
+                                    : "text-slate-500 hover:text-slate-700"
                                     }`}
                             >
                                 {activeCategory === category && (

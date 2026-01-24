@@ -14,16 +14,6 @@ export default function Blogs() {
 
     return (
         <section id="Blogs" className="py-24 px-4 relative overflow-hidden">
-            {/* Background Texture */}
-            {/* <div className="absolute inset-0 opacity-[0.03] pointer-events-none mix-blend-multiply ">
-                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <filter id="noise">
-                        <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
-                    </filter>
-                    <rect width="100%" height="100%" filter="url(#noise)" />
-                </svg>
-            </div> */}
-
             <div className="max-w-4xl mx-auto relative z-10 pt-10 border-t border-slate-900/20">
                 <div className="text-center mb-16">
                     <motion.h2
@@ -48,7 +38,7 @@ export default function Blogs() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="border border-slate-200 rounded-2xl bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                            className="border border-slate-200 rounded-2xl bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
                         >
                             <button
                                 onClick={() => toggle(blog.id)}

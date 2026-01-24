@@ -13,12 +13,12 @@ export default function PlanetBackground() {
     ];
 
     return (
-        <div className="absolute inset-0 pointer-events-none z-10 flex items-center justify-center ">
+        <div className="absolute inset-0 pointer-events-none z-10 flex items-center justify-center">
             {/* Parchment / Celestial Chart Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-b from-white via-white/50 to-white" />
+            <div className="absolute inset-0 transition-colors duration-500" />
 
             {/* Noise Texture (Darker for visibility on light bg) */}
-            <div className="absolute inset-0  opacity-10 mix-blend-multiply"></div>
+            <div className="absolute inset-0 opacity-10 mix-blend-multiply transition-all duration-500"></div>
 
             {/* Sun */}
             <motion.div
