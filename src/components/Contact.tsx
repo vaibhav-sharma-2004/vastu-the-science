@@ -63,7 +63,7 @@ export default function Contact() {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     return (
-        <section id="Contact" className="py-24 px-4 relative overflow-hidden bg-white">
+        <section id="Contact" className="py-24 px-4 relative overflow-hidden">
             <div className="max-w-6xl mx-auto relative z-10 pt-10 border-t border-slate-900/20">
                 <div className="text-center mb-16">
                     <motion.h2

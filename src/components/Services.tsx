@@ -10,7 +10,7 @@ export default function Services() {
     const [activeCategory, setActiveCategory] = useState<Category>("Vastu");
 
     return (
-        <section id="Services" className="py-24 px-4 bg-white relative overflow-hidden">
+        <section id="Services" className="py-24 px-4 relative overflow-hidden">
             <div className="max-w-6xl mx-auto relative z-1 pt-10 border-t border-slate-900/20">
                 <div className="text-center mb-16">
                     <motion.h2
