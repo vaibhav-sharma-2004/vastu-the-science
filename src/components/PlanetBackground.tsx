@@ -33,7 +33,7 @@ export default function PlanetBackground() {
                 {planets.map((planet, i) => (
                     <div
                         key={planet.name}
-                        className={`absolute rounded-full border border-black/20 ${planet.orbit}`}
+                        className={`absolute rounded-full border border-black/20 dark:border-white/20 ${planet.orbit}`}
                     >
                         <motion.div
                             className="absolute inset-0"
@@ -46,10 +46,10 @@ export default function PlanetBackground() {
                             }}
                         >
                             <div
-                                className={`absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 ${planet.size} rounded-full ${planet.color} shadow-[inset_-1px_-1px_3px_rgba(0,0,0,0.3)] border border-slate-900/20`}
+                                className={`absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 ${planet.size} rounded-full ${planet.color} shadow-[inset_-1px_-1px_3px_rgba(0,0,0,0.3)] border border-slate-900/20 dark:border-white/30`}
                             >
                                 {planet.hasRing && (
-                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[160%] border border-slate-900/30 rounded-full rotate-45 scale-y-50" />
+                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[160%] border border-slate-900/30 dark:border-white rounded-full rotate-45 scale-y-50" />
                                 )}
                             </div>
                         </motion.div>

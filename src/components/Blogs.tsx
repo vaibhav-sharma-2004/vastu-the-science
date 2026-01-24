@@ -14,18 +14,18 @@ export default function Blogs() {
 
     return (
         <section id="Blogs" className="py-24 px-4 relative overflow-hidden">
-            <div className="max-w-4xl mx-auto relative z-10 pt-10 border-t border-slate-900/20">
+            <div className="max-w-4xl mx-auto relative z-10 pt-10 border-t border-slate-900/20 dark:border-white/30">
                 <div className="text-center mb-16">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-4xl md:text-5xl font-serif text-slate-900 mb-6"
+                        className="text-4xl md:text-5xl font-serif text-slate-900 dark:text-amber-50 mb-6"
                     >
                         Blogs
                     </motion.h2>
-                    <div className="w-24 h-1 bg-amber-200 mx-auto rounded-full mb-8" />
-                    <p className="text-slate-600 font-sans max-w-2xl mx-auto">
+                    <div className="w-24 h-1 bg-amber-200 dark:bg-amber-600 mx-auto rounded-full mb-8" />
+                    <p className="text-slate-600 dark:text-slate-400 font-sans max-w-2xl mx-auto">
                         Explore the foundational principles of Vedic sciences and how they can transform your perspective on life and space.
                     </p>
                 </div>
@@ -38,20 +38,20 @@ export default function Blogs() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="border border-slate-200 rounded-2xl bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
+                            className="border border-slate-200 dark:border-slate-700 rounded-2xl bg-white dark:bg-slate-800/50 overflow-hidden shadow-sm hover:shadow-md dark:hover:shadow-black/20 transition-all duration-300"
                         >
                             <button
                                 onClick={() => toggle(blog.id)}
                                 className="w-full px-6 py-6 flex items-center justify-between text-left focus:outline-none group"
                             >
-                                <span className="text-xl font-serif text-slate-800 group-hover:text-amber-700 transition-colors">
+                                <span className="text-xl font-serif text-slate-800 dark:text-amber-50 group-hover:text-amber-700 dark:group-hover:text-amber-400 transition-colors">
                                     {blog.question}
                                 </span>
                                 <motion.div
                                     animate={{ rotate: openId === blog.id ? 180 : 0 }}
                                     transition={{ duration: 0.3 }}
                                 >
-                                    <ChevronDown className="w-5 h-5 text-slate-400 group-hover:text-amber-700" />
+                                    <ChevronDown className="w-5 h-5 text-slate-400 dark:text-slate-500 group-hover:text-amber-700 dark:group-hover:text-amber-400" />
                                 </motion.div>
                             </button>
 
@@ -64,8 +64,8 @@ export default function Blogs() {
                                         transition={{ duration: 0.3, ease: "easeInOut" }}
                                     >
                                         <div className="px-6 pb-6 pt-2">
-                                            <div className="w-full h-px bg-slate-100 mb-4" />
-                                            <p className="text-slate-600 font-sans leading-relaxed">
+                                            <div className="w-full h-px bg-slate-100 dark:bg-slate-700 mb-4" />
+                                            <p className="text-slate-600 dark:text-slate-400 font-sans leading-relaxed">
                                                 {blog.answer}
                                             </p>
                                         </div>

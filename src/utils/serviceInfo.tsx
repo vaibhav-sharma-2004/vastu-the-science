@@ -59,17 +59,17 @@ export const serviceData: Record<Category, SubService[]> = {
         },
         {
             name: "Corporate Astrology",
-            description: "Analyze Guna Milan and planetary compatibility for a harmonious and lasting marriage alliance.",
+            description: "Choose auspicious timings (muhurat), leadership planning, branding, investments, and strategic decisions by aligning business actions with cosmic energies.",
             image: coorporateAstro,
         },
         {
             name: "Medical Astrology",
-            description: "Analyze Guna Milan and planetary compatibility for a harmonious and lasting marriage alliance.",
+            description: "Connect planets, zodiac signs, and houses with different parts of the human body and diseases by analyzing planetary transits on physical and mental well-being.",
             image: medicalAstro,
         },
         {
             name: "Child Astrology",
-            description: "Analyze Guna Milan and planetary compatibility for a harmonious and lasting marriage alliance.",
+            description: "Identify child's strengths, learning style, emotional needs, and suitable fields for growth from an early age by using planetary periods and remedies.",
             image: childAstrology,
         }
     ],
