@@ -180,7 +180,7 @@ export default function Contact() {
                         <div className="hidden md:flex absolute left-1/2 top-0 bottom-0 -translate-x-1/2 items-center justify-center pointer-events-none">
                             <div className="h-full w-px bg-slate-200 dark:bg-slate-700 relative">
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 flex items-center justify-center shadow-sm">
-                                    <span className="text-slate-400 dark:text-slate-500 font-serif font-medium text-xs italic">OR</span>
+                                    <span className="text-black dark:text-white font-serif font-medium text-xs italic">OR</span>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +188,7 @@ export default function Contact() {
                         {/* Mobile OR Separator */}
                     <div className="flex md:hidden items-center justify-center gap-4 my-8">
                         <div className="h-px flex-grow bg-slate-200 dark:bg-slate-700" />
-                        <span className="text-slate-400 dark:text-slate-500 font-serif font-medium text-xs italic">OR</span>
+                        <span className="text-black dark:text-white font-serif font-medium text-xs italic">OR</span>
                         <div className="h-px flex-grow bg-slate-200 dark:bg-slate-700" />
                     </div>
 
