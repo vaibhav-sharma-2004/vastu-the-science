@@ -15,7 +15,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Celestial Insights | Astrologer Portfolio",
+  title: "Vastu The Science",
   description: "Expert Astrology, Vastu, and Numerology services.",
 };
 
